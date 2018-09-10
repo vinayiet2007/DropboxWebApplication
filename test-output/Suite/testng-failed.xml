@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="User_Email" value="vinay.iet2007@gmail.com"/>
+  <parameter name="User_Email" value="d3062366@nwytg.net"/>
   <parameter name="Url_After_Login" value="https://www.dropbox.com/h"/>
   <parameter name="Shared_Email" value="test@test.com"/>
-  <parameter name="User_Password" value="Vinay@123"/>
+  <parameter name="User_Password" value="Test@123"/>
   <parameter name="Url" value="https://www.dropbox.com/"/>
   <parameter name="Folder_Name" value="Dropboxfolder"/>
   <parameter name="Browser" value="Chrome"/>
   <test name="Dropbox test automation">
-    <parameter name="User_Email" value="vinay.iet2007@gmail.com"/>
+    <parameter name="User_Email" value="d3062366@nwytg.net"/>
     <parameter name="Url_After_Login" value="https://www.dropbox.com/h"/>
     <parameter name="Shared_Email" value="test@test.com"/>
-    <parameter name="User_Password" value="Vinay@123"/>
+    <parameter name="User_Password" value="Test@123"/>
     <parameter name="Url" value="https://www.dropbox.com/"/>
     <parameter name="Folder_Name" value="Dropboxfolder"/>
     <parameter name="Browser" value="Chrome"/>

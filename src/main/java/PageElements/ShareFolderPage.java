@@ -61,16 +61,15 @@ public class ShareFolderPage extends Driver
 		List<WebElement> Tablerows=driver.findElements(By.xpath("/html/body/div[4]/div/div[6]/div[2]/div/div/main/div[1]/div/div/div[1]/table/tbody/tr/td[1]"));
 		
 		String Xpathbeforetablerow="/html/body/div[4]/div/div[6]/div[2]/div/div/main/div[1]/div/div/div[1]/table/tbody/tr[";
-		String Xpathaftertablerow="]/td[2]/div[2]/div/div[1]/p[1]/a/div/span";
-		String Xpathaftertablecol="]/td[1]/div/label/span[contains(@class,'mc-checkbox-border')]";//span[contains(@class,'mc-checkbox-border')]";
-		
+		String Xpathaftertablerow="]//div[@class='brws-file-name-element']/span";
+		String Xpathaftertablecol="]//span[@class='mc-checkbox-border']";
 		System.out.println(Tablerows.size());
-		for (int i=1;i<Tablerows.size();i++)//Verify each row in the folder table
+		for (int i=1;i<=Tablerows.size();i++)//Verify each row in the folder table
 		{
-			if(driver.findElement(By.xpath(Xpathbeforetablerow + (i+1) + Xpathaftertablerow )).getText().contains(Foldername))
+			if(driver.findElement(By.xpath(Xpathbeforetablerow + (i) + Xpathaftertablerow )).getText().contains(Foldername))
 			{
 				 Actions action = new Actions(driver); 
-				 action.moveToElement(driver.findElement(By.xpath(Xpathbeforetablerow + (i+1) + Xpathaftertablecol ))).click().build().perform();
+				 action.moveToElement(driver.findElement(By.xpath(Xpathbeforetablerow + (i) + Xpathaftertablecol ))).click().build().perform();
 				 Thread.sleep(3000);
 				 break;
 			}
