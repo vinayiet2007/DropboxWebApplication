@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Dropbox test automation">
+  	<parameter name="Browser" value="Chrome"/>
+  	<parameter name="Url" value="https://www.dropbox.com/"/>
+  	<parameter name="Url_After_Login" value="https://www.dropbox.com/h"/>
+	<parameter name="User_Email" value="d3062366@nwytg.net"/>
+	<parameter name="User_Password" value="Test@123"/>
+	<parameter name="Folder_Name" value="Dropboxfolder"/>
+	<parameter name="Shared_Email" value="test@test.com"/>
+    <classes>
+      
+      <class name="DropboxTestCases.Logintest"/>
+      <class name="DropboxTestCases.Createfoldertest"/>
+      <class name="DropboxTestCases.Uploadfiletest"/>
+      <class name="DropboxTestCases.Sharefoldertest"/>
+      <class name="DropboxTestCases.Deletefoldertest"/>
+      <class name="DropboxTestCases.Logouttest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
