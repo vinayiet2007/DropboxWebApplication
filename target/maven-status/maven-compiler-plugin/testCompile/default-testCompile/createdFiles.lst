@@ -1,0 +1,6 @@
+DropboxTestCases\Logintest.class
+DropboxTestCases\Logouttest.class
+DropboxTestCases\Uploadfiletest.class
+DropboxTestCases\Createfoldertest.class
+DropboxTestCases\Deletefoldertest.class
+DropboxTestCases\Sharefoldertest.class

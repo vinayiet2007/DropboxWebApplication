@@ -1,0 +1,9 @@
+PageElements\UploadFilePage.class
+PageElements\CreateNewFolderPage.class
+TestClass.class
+PageElements\DeleteFolderPage.class
+PageElements\ShareFolderPage.class
+PageElements\LogoutPage.class
+PageElements\Loginpage.class
+Drivers\Driver.class
+Utilities\ReadOuputFileProperties.class

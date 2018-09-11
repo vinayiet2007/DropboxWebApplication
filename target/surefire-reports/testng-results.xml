@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="56316" started-at="2018-09-11T09:21:11Z" finished-at="2018-09-11T09:22:07Z">
+    <groups>
+    </groups>
+    <test name="Dropbox test automation" duration-ms="56316" started-at="2018-09-11T09:21:11Z" finished-at="2018-09-11T09:22:07Z">
+      <class name="DropboxTestCases.Deletefoldertest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DropboxTestCases.Deletefoldertest@7e0ea639]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:21:54Z" finished-at="2018-09-11T11:21:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dropboxfolder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Verifydeletedfolder()[pri:0, instance:DropboxTestCases.Deletefoldertest@7e0ea639]" name="Verifydeletedfolder" duration-ms="6530" started-at="2018-09-11T11:21:54Z" finished-at="2018-09-11T11:22:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifydeletedfolder -->
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Deletefoldertest@7e0ea639]" name="captureresult" is-config="true" duration-ms="26" started-at="2018-09-11T11:22:01Z" finished-at="2018-09-11T11:22:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verifydeletedfolder status=SUCCESS method=Deletefoldertest.Verifydeletedfolder()[pri:0, instance:DropboxTestCases.Deletefoldertest@7e0ea639] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureresult -->
+      </class> <!-- DropboxTestCases.Deletefoldertest -->
+      <class name="DropboxTestCases.Logintest">
+        <test-method status="PASS" signature="open_browser(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Logintest@30c7da1e]" name="open_browser" is-config="true" duration-ms="7602" started-at="2018-09-11T11:21:11Z" finished-at="2018-09-11T11:21:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.dropbox.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_browser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:DropboxTestCases.Logouttest@5b464ce8]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:21:18Z" finished-at="2018-09-11T11:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Verify_Login(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Logintest@30c7da1e]" name="Verify_Login" duration-ms="5091" started-at="2018-09-11T11:21:18Z" finished-at="2018-09-11T11:21:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[d3062366@nwytg.net]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login -->
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Logintest@30c7da1e]" name="captureresult" is-config="true" duration-ms="211" started-at="2018-09-11T11:21:23Z" finished-at="2018-09-11T11:21:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_Login status=SUCCESS method=Logintest.Verify_Login(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Logintest@30c7da1e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureresult -->
+      </class> <!-- DropboxTestCases.Logintest -->
+      <class name="DropboxTestCases.Sharefoldertest">
+        <test-method status="PASS" signature="Verifyfoldershared()[pri:0, instance:DropboxTestCases.Sharefoldertest@17c68925]" name="Verifyfoldershared" duration-ms="10012" started-at="2018-09-11T11:21:44Z" finished-at="2018-09-11T11:21:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifyfoldershared -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Sharefoldertest@17c68925]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:21:44Z" finished-at="2018-09-11T11:21:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dropboxfolder]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@test.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Sharefoldertest@17c68925]" name="captureresult" is-config="true" duration-ms="31" started-at="2018-09-11T11:21:54Z" finished-at="2018-09-11T11:21:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verifyfoldershared status=SUCCESS method=Sharefoldertest.Verifyfoldershared()[pri:0, instance:DropboxTestCases.Sharefoldertest@17c68925] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureresult -->
+      </class> <!-- DropboxTestCases.Sharefoldertest -->
+      <class name="DropboxTestCases.Uploadfiletest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DropboxTestCases.Uploadfiletest@19dfb72a]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:21:29Z" finished-at="2018-09-11T11:21:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dropboxfolder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="UploadFile()[pri:0, instance:DropboxTestCases.Uploadfiletest@19dfb72a]" name="UploadFile" duration-ms="15066" started-at="2018-09-11T11:21:29Z" finished-at="2018-09-11T11:21:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadFile -->
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Uploadfiletest@19dfb72a]" name="captureresult" is-config="true" duration-ms="29" started-at="2018-09-11T11:21:44Z" finished-at="2018-09-11T11:21:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadFile status=SUCCESS method=Uploadfiletest.UploadFile()[pri:0, instance:DropboxTestCases.Uploadfiletest@19dfb72a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureresult -->
+      </class> <!-- DropboxTestCases.Uploadfiletest -->
+      <class name="DropboxTestCases.Logouttest">
+        <test-method status="PASS" signature="Verifylogout()[pri:0, instance:DropboxTestCases.Logouttest@5b464ce8]" name="Verifylogout" duration-ms="6462" started-at="2018-09-11T11:22:01Z" finished-at="2018-09-11T11:22:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifylogout -->
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Logouttest@5b464ce8]" name="captureresult" is-config="true" duration-ms="26" started-at="2018-09-11T11:22:07Z" finished-at="2018-09-11T11:22:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verifylogout status=SUCCESS method=Logouttest.Verifylogout()[pri:0, instance:DropboxTestCases.Logouttest@5b464ce8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureresult -->
+        <test-method status="PASS" signature="displayresult()[pri:0, instance:DropboxTestCases.Logouttest@5b464ce8]" name="displayresult" is-config="true" duration-ms="567" started-at="2018-09-11T11:22:07Z" finished-at="2018-09-11T11:22:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayresult -->
+      </class> <!-- DropboxTestCases.Logouttest -->
+      <class name="DropboxTestCases.Createfoldertest">
+        <test-method status="PASS" signature="VerifyNewFolder()[pri:0, instance:DropboxTestCases.Createfoldertest@57829d67]" name="VerifyNewFolder" duration-ms="5147" started-at="2018-09-11T11:21:24Z" finished-at="2018-09-11T11:21:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNewFolder -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DropboxTestCases.Createfoldertest@57829d67]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:21:24Z" finished-at="2018-09-11T11:21:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dropboxfolder]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Createfoldertest@57829d67]" name="captureresult" is-config="true" duration-ms="72" started-at="2018-09-11T11:21:29Z" finished-at="2018-09-11T11:21:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyNewFolder status=SUCCESS method=Createfoldertest.VerifyNewFolder()[pri:0, instance:DropboxTestCases.Createfoldertest@57829d67] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureresult -->
+      </class> <!-- DropboxTestCases.Createfoldertest -->
+    </test> <!-- Dropbox test automation -->
+  </suite> <!-- Suite -->
+</testng-results>
