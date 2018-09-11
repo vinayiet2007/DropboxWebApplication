@@ -62,12 +62,7 @@ public class Driver
 		    	driver = new FirefoxDriver();
 		    	Thread.sleep(2000);
 			}
-			if(Browser_type.equalsIgnoreCase("IE"))// For Internet Explorer Browser
-			{
-				System.setProperty("webdriver.ie.driver", ".\\src\\main\\java\\Utilities\\IEDriverServer64.exe");
-		        driver = new InternetExplorerDriver();
-		    	Thread.sleep(2000);
-			}
+			
 			if(Browser_type.equalsIgnoreCase("Chrome")) // For Chrome Browser
 			{
 				System.setProperty("webdriver.chrome.driver", ".\\src\\main\\java\\Utilities\\chromedriver32.exe");
