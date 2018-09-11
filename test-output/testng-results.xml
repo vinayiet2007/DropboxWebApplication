@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="6" passed="4">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="126655" started-at="2018-09-11T09:25:36Z" finished-at="2018-09-11T09:27:42Z">
+  <suite name="Suite" duration-ms="57485" started-at="2018-09-11T09:52:02Z" finished-at="2018-09-11T09:52:59Z">
     <groups>
     </groups>
-    <test name="Dropbox test automation" duration-ms="126655" started-at="2018-09-11T09:25:36Z" finished-at="2018-09-11T09:27:42Z">
+    <test name="Dropbox test automation" duration-ms="57485" started-at="2018-09-11T09:52:02Z" finished-at="2018-09-11T09:52:59Z">
       <class name="DropboxTestCases.Deletefoldertest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DropboxTestCases.Deletefoldertest@69ee52b6]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:27:30Z" finished-at="2018-09-11T11:27:30Z">
+        <test-method status="PASS" signature="Verifydeletedfolder()[pri:0, instance:DropboxTestCases.Deletefoldertest@11e3df5]" name="Verifydeletedfolder" duration-ms="6720" started-at="2018-09-11T11:52:46Z" finished-at="2018-09-11T11:52:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifydeletedfolder -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DropboxTestCases.Deletefoldertest@11e3df5]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:52:46Z" finished-at="2018-09-11T11:52:46Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verifydeletedfolder()[pri:0, instance:DropboxTestCases.Deletefoldertest@69ee52b6]" name="Verifydeletedfolder" duration-ms="6193" started-at="2018-09-11T11:27:30Z" finished-at="2018-09-11T11:27:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verifydeletedfolder -->
-        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Deletefoldertest@69ee52b6]" name="captureresult" is-config="true" duration-ms="26" started-at="2018-09-11T11:27:36Z" finished-at="2018-09-11T11:27:36Z">
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Deletefoldertest@11e3df5]" name="captureresult" is-config="true" duration-ms="30" started-at="2018-09-11T11:52:53Z" finished-at="2018-09-11T11:52:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verifydeletedfolder status=SUCCESS method=Deletefoldertest.Verifydeletedfolder()[pri:0, instance:DropboxTestCases.Deletefoldertest@69ee52b6] output={null}]]]>
+                <![CDATA[[TestResult name=Verifydeletedfolder status=SUCCESS method=Deletefoldertest.Verifydeletedfolder()[pri:0, instance:DropboxTestCases.Deletefoldertest@11e3df5] output={null}]]]>
               </value>
             </param>
           </params>
@@ -35,7 +35,7 @@
         </test-method> <!-- captureresult -->
       </class> <!-- DropboxTestCases.Deletefoldertest -->
       <class name="DropboxTestCases.Logintest">
-        <test-method status="PASS" signature="open_browser(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Logintest@a1bf56c0]" name="open_browser" is-config="true" duration-ms="7101" started-at="2018-09-11T11:25:36Z" finished-at="2018-09-11T11:25:43Z">
+        <test-method status="PASS" signature="open_browser(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Logintest@5a545ef9]" name="open_browser" is-config="true" duration-ms="7402" started-at="2018-09-11T11:52:02Z" finished-at="2018-09-11T11:52:09Z">
           <params>
             <param index="0">
               <value>
@@ -51,11 +51,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_browser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:DropboxTestCases.Logouttest@f885076c]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:25:43Z" finished-at="2018-09-11T11:25:43Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:DropboxTestCases.Logouttest@fd39d691]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:52:09Z" finished-at="2018-09-11T11:52:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verify_Login(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Logintest@a1bf56c0]" name="Verify_Login" duration-ms="18871" started-at="2018-09-11T11:25:43Z" finished-at="2018-09-11T11:26:02Z">
+        <test-method status="PASS" signature="Verify_Login(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Logintest@5a545ef9]" name="Verify_Login" duration-ms="6482" started-at="2018-09-11T11:52:09Z" finished-at="2018-09-11T11:52:16Z">
           <params>
             <param index="0">
               <value>
@@ -71,11 +71,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Login -->
-        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Logintest@a1bf56c0]" name="captureresult" is-config="true" duration-ms="279" started-at="2018-09-11T11:26:02Z" finished-at="2018-09-11T11:26:02Z">
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Logintest@5a545ef9]" name="captureresult" is-config="true" duration-ms="253" started-at="2018-09-11T11:52:16Z" finished-at="2018-09-11T11:52:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verify_Login status=SUCCESS method=Logintest.Verify_Login(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Logintest@a1bf56c0] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Login status=SUCCESS method=Logintest.Verify_Login(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Logintest@5a545ef9] output={null}]]]>
               </value>
             </param>
           </params>
@@ -84,7 +84,7 @@
         </test-method> <!-- captureresult -->
       </class> <!-- DropboxTestCases.Logintest -->
       <class name="DropboxTestCases.Sharefoldertest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Sharefoldertest@af9cd79e]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:27:20Z" finished-at="2018-09-11T11:27:20Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:DropboxTestCases.Sharefoldertest@6dd3578f]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:52:36Z" finished-at="2018-09-11T11:52:36Z">
           <params>
             <param index="0">
               <value>
@@ -100,15 +100,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Verifyfoldershared()[pri:0, instance:DropboxTestCases.Sharefoldertest@af9cd79e]" name="Verifyfoldershared" duration-ms="9275" started-at="2018-09-11T11:27:20Z" finished-at="2018-09-11T11:27:29Z">
+        <test-method status="PASS" signature="Verifyfoldershared()[pri:0, instance:DropboxTestCases.Sharefoldertest@6dd3578f]" name="Verifyfoldershared" duration-ms="9784" started-at="2018-09-11T11:52:36Z" finished-at="2018-09-11T11:52:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verifyfoldershared -->
-        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Sharefoldertest@af9cd79e]" name="captureresult" is-config="true" duration-ms="34" started-at="2018-09-11T11:27:29Z" finished-at="2018-09-11T11:27:30Z">
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Sharefoldertest@6dd3578f]" name="captureresult" is-config="true" duration-ms="29" started-at="2018-09-11T11:52:46Z" finished-at="2018-09-11T11:52:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verifyfoldershared status=SUCCESS method=Sharefoldertest.Verifyfoldershared()[pri:0, instance:DropboxTestCases.Sharefoldertest@af9cd79e] output={null}]]]>
+                <![CDATA[[TestResult name=Verifyfoldershared status=SUCCESS method=Sharefoldertest.Verifyfoldershared()[pri:0, instance:DropboxTestCases.Sharefoldertest@6dd3578f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -117,7 +117,7 @@
         </test-method> <!-- captureresult -->
       </class> <!-- DropboxTestCases.Sharefoldertest -->
       <class name="DropboxTestCases.Uploadfiletest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DropboxTestCases.Uploadfiletest@f27246b2]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:26:13Z" finished-at="2018-09-11T11:26:13Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DropboxTestCases.Uploadfiletest@69cfb7cf]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:52:21Z" finished-at="2018-09-11T11:52:21Z">
           <params>
             <param index="0">
               <value>
@@ -128,88 +128,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="UploadFile()[pri:0, instance:DropboxTestCases.Uploadfiletest@f27246b2]" name="UploadFile" duration-ms="67285" started-at="2018-09-11T11:26:13Z" finished-at="2018-09-11T11:27:20Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /html/body/div[1]/div/div/div/p' (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /html/body/div[1]/div/div/div/p' (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at PageElements.UploadFilePage.UploadFile(UploadFilePage.java:75)
-	at DropboxTestCases.Uploadfiletest.UploadFile(Uploadfiletest.java:56)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
-	at java.lang.reflect.Method.invoke(Method.java:508)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div/div/p"}
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DEMUCVAZ30', ip: '10.120.5.22', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\rftuser\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59721}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
-Session ID: 16f74ff28a43bd14165d6a963ed9c356
-*** Element info: {Using=xpath, value=/html/body/div[1]/div/div/div/p}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:88)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:57)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:437)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="UploadFile()[pri:0, instance:DropboxTestCases.Uploadfiletest@69cfb7cf]" name="UploadFile" duration-ms="14877" started-at="2018-09-11T11:52:21Z" finished-at="2018-09-11T11:52:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UploadFile -->
-        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Uploadfiletest@f27246b2]" name="captureresult" is-config="true" duration-ms="31" started-at="2018-09-11T11:27:20Z" finished-at="2018-09-11T11:27:20Z">
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Uploadfiletest@69cfb7cf]" name="captureresult" is-config="true" duration-ms="32" started-at="2018-09-11T11:52:36Z" finished-at="2018-09-11T11:52:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UploadFile status=FAILURE method=Uploadfiletest.UploadFile()[pri:0, instance:DropboxTestCases.Uploadfiletest@f27246b2] output={null}]]]>
+                <![CDATA[[TestResult name=UploadFile status=SUCCESS method=Uploadfiletest.UploadFile()[pri:0, instance:DropboxTestCases.Uploadfiletest@69cfb7cf] output={null}]]]>
               </value>
             </param>
           </params>
@@ -218,65 +145,28 @@ Session ID: 16f74ff28a43bd14165d6a963ed9c356
         </test-method> <!-- captureresult -->
       </class> <!-- DropboxTestCases.Uploadfiletest -->
       <class name="DropboxTestCases.Logouttest">
-        <test-method status="FAIL" signature="Verifylogout()[pri:0, instance:DropboxTestCases.Logouttest@f885076c]" name="Verifylogout" duration-ms="6409" started-at="2018-09-11T11:27:36Z" finished-at="2018-09-11T11:27:42Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[User Logged out successfully expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: User Logged out successfully expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at DropboxTestCases.Logouttest.Verifylogout(Logouttest.java:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
-	at java.lang.reflect.Method.invoke(Method.java:508)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="Verifylogout()[pri:0, instance:DropboxTestCases.Logouttest@fd39d691]" name="Verifylogout" duration-ms="6407" started-at="2018-09-11T11:52:53Z" finished-at="2018-09-11T11:52:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verifylogout -->
-        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Logouttest@f885076c]" name="captureresult" is-config="true" duration-ms="31" started-at="2018-09-11T11:27:42Z" finished-at="2018-09-11T11:27:42Z">
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Logouttest@fd39d691]" name="captureresult" is-config="true" duration-ms="29" started-at="2018-09-11T11:52:59Z" finished-at="2018-09-11T11:52:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Verifylogout status=FAILURE method=Logouttest.Verifylogout()[pri:0, instance:DropboxTestCases.Logouttest@f885076c] output={null}]]]>
+                <![CDATA[[TestResult name=Verifylogout status=SUCCESS method=Logouttest.Verifylogout()[pri:0, instance:DropboxTestCases.Logouttest@fd39d691] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureresult -->
-        <test-method status="PASS" signature="displayresult()[pri:0, instance:DropboxTestCases.Logouttest@f885076c]" name="displayresult" is-config="true" duration-ms="547" started-at="2018-09-11T11:27:42Z" finished-at="2018-09-11T11:27:43Z">
+        <test-method status="PASS" signature="displayresult()[pri:0, instance:DropboxTestCases.Logouttest@fd39d691]" name="displayresult" is-config="true" duration-ms="590" started-at="2018-09-11T11:52:59Z" finished-at="2018-09-11T11:53:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- displayresult -->
       </class> <!-- DropboxTestCases.Logouttest -->
       <class name="DropboxTestCases.Createfoldertest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DropboxTestCases.Createfoldertest@7eaf603f]" name="setup" is-config="true" duration-ms="0" started-at="2018-09-11T11:26:02Z" finished-at="2018-09-11T11:26:02Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DropboxTestCases.Createfoldertest@febb9d7a]" name="setup" is-config="true" duration-ms="1" started-at="2018-09-11T11:52:16Z" finished-at="2018-09-11T11:52:16Z">
           <params>
             <param index="0">
               <value>
@@ -287,15 +177,15 @@ Session ID: 16f74ff28a43bd14165d6a963ed9c356
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyNewFolder()[pri:0, instance:DropboxTestCases.Createfoldertest@7eaf603f]" name="VerifyNewFolder" duration-ms="11065" started-at="2018-09-11T11:26:02Z" finished-at="2018-09-11T11:26:13Z">
+        <test-method status="PASS" signature="VerifyNewFolder()[pri:0, instance:DropboxTestCases.Createfoldertest@febb9d7a]" name="VerifyNewFolder" duration-ms="5387" started-at="2018-09-11T11:52:16Z" finished-at="2018-09-11T11:52:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyNewFolder -->
-        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Createfoldertest@7eaf603f]" name="captureresult" is-config="true" duration-ms="35" started-at="2018-09-11T11:26:13Z" finished-at="2018-09-11T11:26:13Z">
+        <test-method status="PASS" signature="captureresult(org.testng.ITestResult)[pri:0, instance:DropboxTestCases.Createfoldertest@febb9d7a]" name="captureresult" is-config="true" duration-ms="32" started-at="2018-09-11T11:52:21Z" finished-at="2018-09-11T11:52:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyNewFolder status=SUCCESS method=Createfoldertest.VerifyNewFolder()[pri:0, instance:DropboxTestCases.Createfoldertest@7eaf603f] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyNewFolder status=SUCCESS method=Createfoldertest.VerifyNewFolder()[pri:0, instance:DropboxTestCases.Createfoldertest@febb9d7a] output={null}]]]>
               </value>
             </param>
           </params>

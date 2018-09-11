@@ -62,6 +62,7 @@ public class Uploadfiletest
 	{
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
+			logger.log(LogStatus.FAIL, result.getThrowable());
 			logger.log(LogStatus.FAIL, result.getMethod().getMethodName() + "  is Failed");
 		}
 	 else  if(result.getStatus()==ITestResult.SUCCESS)
