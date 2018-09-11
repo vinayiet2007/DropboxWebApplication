@@ -45,15 +45,16 @@ public class Uploadfiletest
 		extentreport=driver.report();
 		logger=driver.logger();
 	}
+	@Parameters({"Browser"})
 	@Test
-	public void UploadFile() throws Exception//This function will verify if file is uplaoded
+	public void UploadFile(String Browser) throws Exception//This function will verify if file is uplaoded
 	{
 		logger = extentreport.startTest("Verify New file upload");
 		ReadOuputFileProperties readouputfileproperties=new ReadOuputFileProperties();
 		Properties prop=readouputfileproperties.OpenOutputFile();
 		String Foldername=prop.getProperty("Created_Foler_Name");//fetching file name from output file
 		UploadFilePage uploadfilepage=new UploadFilePage();
-		boolean uploadfilstatus=uploadfilepage.UploadFile(Foldername, System.getProperty("user.dir")+"\\src\\main\\java\\Utilities\\FileToBeUploaded.txt");
+		boolean uploadfilstatus=uploadfilepage.UploadFile(Foldername, System.getProperty("user.dir")+"\\src\\main\\java\\Utilities\\FileToBeUploaded.txt",Browser);
 		System.out.println(uploadfilstatus);
 		assertTrue(uploadfilstatus,"File Uploaded Succesfully");
 	}

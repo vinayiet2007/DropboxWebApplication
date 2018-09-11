@@ -5,17 +5,17 @@
   <parameter name="Url_After_Login" value="https://www.dropbox.com/h"/>
   <parameter name="Shared_Email" value="test@test.com"/>
   <parameter name="User_Password" value="Test@123"/>
-  <parameter name="Url" value="https://www.dropbox.com/"/>
+  <parameter name="Url" value="https://www.dropbox.com"/>
   <parameter name="Folder_Name" value="Dropboxfolder"/>
-  <parameter name="Browser" value="Chrome"/>
+  <parameter name="Browser" value="Firefox"/>
   <test name="Dropbox test automation">
     <parameter name="User_Email" value="d3062366@nwytg.net"/>
     <parameter name="Url_After_Login" value="https://www.dropbox.com/h"/>
     <parameter name="Shared_Email" value="test@test.com"/>
     <parameter name="User_Password" value="Test@123"/>
-    <parameter name="Url" value="https://www.dropbox.com/"/>
+    <parameter name="Url" value="https://www.dropbox.com"/>
     <parameter name="Folder_Name" value="Dropboxfolder"/>
-    <parameter name="Browser" value="Chrome"/>
+    <parameter name="Browser" value="Firefox"/>
     <classes>
       <class name="DropboxTestCases.Logintest"/>
       <class name="DropboxTestCases.Createfoldertest"/>

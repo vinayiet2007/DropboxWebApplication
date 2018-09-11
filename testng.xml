@@ -2,10 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Dropbox test automation">
-  	<parameter name="Browser" value="Chrome"/>
-  	<parameter name="Url" value="https://www.dropbox.com/"/>
+  	<parameter name="Browser" value="Firefox"/>
+  	<!-- Browser values will be Firefox or Chrome -->
+  	<parameter name="Url" value="https://www.dropbox.com"/>
   	<parameter name="Url_After_Login" value="https://www.dropbox.com/h"/>
 	<parameter name="User_Email" value="d3062366@nwytg.net"/>
+	<!-- User should exist in Dropbox and should not ask for captcha(This functionality is not integerated) -->
 	<parameter name="User_Password" value="Test@123"/>
 	<parameter name="Folder_Name" value="Dropboxfolder"/>
 	<parameter name="Shared_Email" value="test@test.com"/>

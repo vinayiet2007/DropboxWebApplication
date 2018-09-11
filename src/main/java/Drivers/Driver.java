@@ -72,11 +72,13 @@ public class Driver
 			{
 				System.setProperty("webdriver.chrome.driver", ".\\src\\main\\java\\Utilities\\chromedriver32.exe");
 				driver=new ChromeDriver();
+				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);//Total Implicit wait to load page objects is 20 Secs which hard coded here
+				driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);//Total Implicit wait to load page is 20 Secs which hard coded here
 			}
 			driver.get(Url);//Driver will open the URL as configured in Config.poperties
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);//Total Implicit wait to load page objects is 20 Secs which hard coded here
-			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);//Total Implicit wait to load page is 20 Secs which hard coded here
+			
+			
 			
 		}
 	}

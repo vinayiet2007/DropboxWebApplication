@@ -45,12 +45,13 @@ public class UploadFilePage extends Driver
 	}
 	
 	
-	public boolean UploadFile(String Foldername,String Filepath) throws Exception//This function will upload the file
+	public boolean UploadFile(String Foldername,String Filepath,String Browser) throws Exception//This function will upload the file
 	{
+		String Successmessage=null;
 		Thread.sleep(3000);
 		
 		ExplicitWait.until(ExpectedConditions.elementToBeClickable(Link_files)).click();
-		
+		Thread.sleep(2000);
 		List<WebElement> Tablerows=driver.findElements(By.xpath("/html/body/div[4]/div/div[6]/div[2]/div/div/main/div[1]/div/div/div[1]/table/tbody/tr/td[1]"));
 		
 		String Xpathbeforetablerow="/html/body/div[4]/div/div[6]/div[2]/div/div/main/div[1]/div/div/div[1]/table/tbody/tr[";
@@ -71,8 +72,16 @@ public class UploadFilePage extends Driver
 		 * Fileupload.exe is external utility file.
 		 * Created from AUtoIT(utility will be different for different browsers)
 		 */
+		if(Browser.equalsIgnoreCase("Chrome"))
+		{
 		Runtime.getRuntime().exec("cmd.exe /c Start "+System.getProperty("user.dir")+"\\src\\main\\java\\Utilities\\Fileupload.exe "  + Filepath );
-		String Successmessage=ExplicitWait.until(ExpectedConditions.visibilityOf(Popup_successmessage)).getText();
+		Successmessage=ExplicitWait.until(ExpectedConditions.visibilityOf(Popup_successmessage)).getText();
+		}
+		else if(Browser.equalsIgnoreCase("Firefox"))
+		{
+			Runtime.getRuntime().exec("cmd.exe /c Start "+System.getProperty("user.dir")+"\\src\\main\\java\\Utilities\\FileUploadFF.exe  "  + Filepath );
+			Successmessage=ExplicitWait.until(ExpectedConditions.visibilityOf(Popup_successmessage)).getText();
+		}
 		System.out.println(Successmessage);
 		
 		try
