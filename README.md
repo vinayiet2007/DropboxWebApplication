@@ -2,7 +2,8 @@
 *Author Vinay Srivastava
 *Date 11 Sep 2018
 # Environment Details:
-  __Java Version -->__JRE 1.8
+
+__Java Version -->__JRE 1.8
   __Eclipse Version -->__Oxygen
   __Selenium Version -->__3.12.0
   __Extent Reports Version -->__2.41.2
