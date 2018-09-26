@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\RFT\Selenium\workspace\DropboxWebApplication\testng.xml</span>
+                    <span>E:\Drop\DropboxWebApplication\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DropboxTestCases.Deletefoldertest" hash-for-method="Verifydeletedfolder">Verifydeletedfolder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DropboxTestCases.Sharefoldertest" hash-for-method="Verifyfoldershared">Verifyfoldershared</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DropboxTestCases.Logouttest" hash-for-method="Verifylogout">Verifylogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +126,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DropboxTestCases.Uploadfiletest" hash-for-method="UploadFile">UploadFile</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DropboxTestCases.Uploadfiletest" hash-for-method="UploadFile(Chrome)">UploadFile(Chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -113,21 +137,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DropboxTestCases.Logintest" hash-for-method="Verify_Login(d3062366@nwytg.net, Test@123)">Verify_Login(d3062366@nwytg.net, Test@123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DropboxTestCases.Deletefoldertest" hash-for-method="Verifydeletedfolder">Verifydeletedfolder</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DropboxTestCases.Sharefoldertest" hash-for-method="Verifyfoldershared">Verifyfoldershared</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DropboxTestCases.Logouttest" hash-for-method="Verifylogout">Verifylogout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -142,24 +151,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">DropboxTestCases.Uploadfiletest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="UploadFile">
-                  </a> <!-- UploadFile -->
-                  <span class="method-name">UploadFile</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">DropboxTestCases.Sharefoldertest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -168,6 +162,106 @@
                   <a name="Verifyfoldershared">
                   </a> <!-- Verifyfoldershared -->
                   <span class="method-name">Verifyfoldershared</span>
+                  <div class="stack-trace">java.lang.AssertionError: Folder shared successfully expected [true] but found [false]
+	at DropboxTestCases.Sharefoldertest.Verifyfoldershared(Sharefoldertest.java:55)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">DropboxTestCases.Logouttest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verifylogout">
+                  </a> <!-- Verifylogout -->
+                  <span class="method-name">Verifylogout</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;img alt=&quot;Account photo&quot; class=&quot;mc-avatar-image&quot; src=&quot;https://cfl.dropboxstatic.com/static/images/avatar/faceholder-vflGRnT85.svg&quot; style=&quot;height: 32px; width: 32px;&quot;&gt; is not clickable at point (1864, 56). Other element would receive the click: &lt;div class=&quot;db-modal-overlay&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;DEMUCVAZ30&apos;, ip: &apos;10.120.5.22&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\rftuser\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53856}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: 9a5fba987952113232f6c55595027926
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at PageElements.LogoutPage.Logout(LogoutPage.java:44)
+	at DropboxTestCases.Logouttest.Verifylogout(Logouttest.java:46)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">DropboxTestCases.Deletefoldertest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verifydeletedfolder">
+                  </a> <!-- Verifydeletedfolder -->
+                  <span class="method-name">Verifydeletedfolder</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;a href=&quot;https://www.dropbox.com/home&quot; class=&quot;maestro-nav__features-header-link&quot; data-reactid=&quot;24&quot;&gt;...&lt;/a&gt; is not clickable at point (57, 115). Other element would receive the click: &lt;div class=&quot;db-modal-overlay&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;DEMUCVAZ30&apos;, ip: &apos;10.120.5.22&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\rftuser\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53856}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: 9a5fba987952113232f6c55595027926
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at PageElements.DeleteFolderPage.Deletefolder(DeleteFolderPage.java:54)
+	at DropboxTestCases.Deletefoldertest.Verifydeletedfolder(Deletefoldertest.java:53)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">DropboxTestCases.Uploadfiletest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UploadFile(Chrome)">
+                  </a> <!-- UploadFile(Chrome) -->
+                  <span class="method-name">UploadFile</span>
+                  <span class="parameters">(Chrome)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,40 +297,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">DropboxTestCases.Logouttest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verifylogout">
-                  </a> <!-- Verifylogout -->
-                  <span class="method-name">Verifylogout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">DropboxTestCases.Deletefoldertest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verifydeletedfolder">
-                  </a> <!-- Verifydeletedfolder -->
-                  <span class="method-name">Verifydeletedfolder</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\RFT\Selenium\workspace\DropboxWebApplication\testng.xml</span>
+            <span class="header-content">E:\Drop\DropboxWebApplication\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -248,7 +312,7 @@
     &lt;parameter name=&quot;Url_After_Login&quot; value=&quot;https://www.dropbox.com/h&quot;/&gt;
     &lt;parameter name=&quot;Shared_Email&quot; value=&quot;test@test.com&quot;/&gt;
     &lt;parameter name=&quot;User_Password&quot; value=&quot;Test@123&quot;/&gt;
-    &lt;parameter name=&quot;Url&quot; value=&quot;https://www.dropbox.com/&quot;/&gt;
+    &lt;parameter name=&quot;Url&quot; value=&quot;https://www.dropbox.com&quot;/&gt;
     &lt;parameter name=&quot;Folder_Name&quot; value=&quot;Dropboxfolder&quot;/&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
@@ -301,32 +365,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'UploadFile')
 data.setCell(0, 2, 'DropboxTestCases.Uploadfiletest')
-data.setCell(0, 3, 15066);
+data.setCell(0, 3, 17333);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Verifyfoldershared')
 data.setCell(1, 2, 'DropboxTestCases.Sharefoldertest')
-data.setCell(1, 3, 10012);
+data.setCell(1, 3, 6599);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Verifydeletedfolder')
-data.setCell(2, 2, 'DropboxTestCases.Deletefoldertest')
-data.setCell(2, 3, 6530);
+data.setCell(2, 1, 'Verify_Login')
+data.setCell(2, 2, 'DropboxTestCases.Logintest')
+data.setCell(2, 3, 5594);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Verifylogout')
-data.setCell(3, 2, 'DropboxTestCases.Logouttest')
-data.setCell(3, 3, 6462);
+data.setCell(3, 1, 'VerifyNewFolder')
+data.setCell(3, 2, 'DropboxTestCases.Createfoldertest')
+data.setCell(3, 3, 4944);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'VerifyNewFolder')
-data.setCell(4, 2, 'DropboxTestCases.Createfoldertest')
-data.setCell(4, 3, 5147);
+data.setCell(4, 1, 'Verifylogout')
+data.setCell(4, 2, 'DropboxTestCases.Logouttest')
+data.setCell(4, 3, 105);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Verify_Login')
-data.setCell(5, 2, 'DropboxTestCases.Logintest')
-data.setCell(5, 3, 5091);
+data.setCell(5, 1, 'Verifydeletedfolder')
+data.setCell(5, 2, 'DropboxTestCases.Deletefoldertest')
+data.setCell(5, 3, 101);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -354,7 +418,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">DropboxTestCases.Logintest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">open_browser(Chrome, https://www.dropbox.com/)</span>
+                <span class="method-name">open_browser(Chrome, https://www.dropbox.com)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
@@ -362,93 +426,99 @@ return data;
               <div class="chronological-class-name">DropboxTestCases.Logouttest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">7602 ms</span>
+                <span class="method-start">7715 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DropboxTestCases.Logintest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Verify_Login(d3062366@nwytg.net, Test@123)</span>
-                <span class="method-start">7609 ms</span>
+                <span class="method-start">7722 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureresult([TestResult name=Verify_Login status=SUCCESS method=Logintest.Verify_Login(java.lang.String, java.la...)</span>
-                <span class="method-start">12700 ms</span>
+                <span class="method-start">13316 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DropboxTestCases.Createfoldertest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Dropboxfolder)</span>
-                <span class="method-start">12912 ms</span>
+                <span class="method-start">13521 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">VerifyNewFolder</span>
-                <span class="method-start">12912 ms</span>
+                <span class="method-start">13521 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureresult([TestResult name=VerifyNewFolder status=SUCCESS method=Createfoldertest.VerifyNewFolder()[pri:0, ins...)</span>
-                <span class="method-start">18059 ms</span>
+                <span class="method-start">18465 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DropboxTestCases.Uploadfiletest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Dropboxfolder)</span>
-                <span class="method-start">18131 ms</span>
+                <span class="method-start">18535 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">UploadFile</span>
-                <span class="method-start">18131 ms</span>
+                <span class="method-name">UploadFile(Chrome)</span>
+                <span class="method-start">18536 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureresult([TestResult name=UploadFile status=SUCCESS method=Uploadfiletest.UploadFile()[pri:0, instance:Dropbo...)</span>
-                <span class="method-start">33197 ms</span>
+                <span class="method-name">captureresult([TestResult name=UploadFile status=SUCCESS method=Uploadfiletest.UploadFile(java.lang.String)[pri:0,...)</span>
+                <span class="method-start">35870 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DropboxTestCases.Sharefoldertest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Dropboxfolder, test@test.com)</span>
-                <span class="method-start">33226 ms</span>
+                <span class="method-start">35897 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Verifyfoldershared</span>
-                <span class="method-start">33226 ms</span>
+                <span class="method-start">35897 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureresult([TestResult name=Verifyfoldershared status=SUCCESS method=Sharefoldertest.Verifyfoldershared()[pri:0...)</span>
-                <span class="method-start">43238 ms</span>
+                <span class="method-name">captureresult([TestResult name=Verifyfoldershared status=FAILURE method=Sharefoldertest.Verifyfoldershared()[pri:0...)</span>
+                <span class="method-start">42500 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DropboxTestCases.Deletefoldertest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Dropboxfolder)</span>
-                <span class="method-start">43269 ms</span>
+                <span class="method-start">42537 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Verifydeletedfolder</span>
-                <span class="method-start">43270 ms</span>
+                <span class="method-start">42537 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureresult([TestResult name=Verifydeletedfolder status=SUCCESS method=Deletefoldertest.Verifydeletedfolder()[pr...)</span>
-                <span class="method-start">49801 ms</span>
+                <span class="method-name">captureresult([TestResult name=Verifydeletedfolder status=FAILURE method=Deletefoldertest.Verifydeletedfolder()[pr...)</span>
+                <span class="method-start">42641 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DropboxTestCases.Logouttest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Verifylogout</span>
-                <span class="method-start">49827 ms</span>
+                <span class="method-start">42672 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureresult([TestResult name=Verifylogout status=SUCCESS method=Logouttest.Verifylogout()[pri:0, instance:Dropbo...)</span>
-                <span class="method-start">56289 ms</span>
+                <span class="method-name">captureresult([TestResult name=Verifylogout status=FAILURE method=Logouttest.Verifylogout()[pri:0, instance:Dropbo...)</span>
+                <span class="method-start">42778 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">displayresult</span>
-                <span class="method-start">56330 ms</span>
+                <span class="method-start">42835 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

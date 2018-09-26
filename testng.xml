@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Dropbox test automation">
-  	<parameter name="Browser" value="Firefox"/>
+  	<parameter name="Browser" value="Chrome"/>
   	<!-- Browser values will be Firefox or Chrome -->
   	<parameter name="Url" value="https://www.dropbox.com"/>
   	<parameter name="Url_After_Login" value="https://www.dropbox.com/h"/>

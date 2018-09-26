@@ -5,7 +5,7 @@
   <parameter name="Url_After_Login" value="https://www.dropbox.com/h"/>
   <parameter name="Shared_Email" value="test@test.com"/>
   <parameter name="User_Password" value="Test@123"/>
-  <parameter name="Url" value="https://www.dropbox.com/"/>
+  <parameter name="Url" value="https://www.dropbox.com"/>
   <parameter name="Folder_Name" value="Dropboxfolder"/>
   <parameter name="Browser" value="Chrome"/>
   <test name="Dropbox test automation">
@@ -13,7 +13,7 @@
     <parameter name="Url_After_Login" value="https://www.dropbox.com/h"/>
     <parameter name="Shared_Email" value="test@test.com"/>
     <parameter name="User_Password" value="Test@123"/>
-    <parameter name="Url" value="https://www.dropbox.com/"/>
+    <parameter name="Url" value="https://www.dropbox.com"/>
     <parameter name="Folder_Name" value="Dropboxfolder"/>
     <parameter name="Browser" value="Chrome"/>
     <classes>
@@ -25,4 +25,55 @@
       <class name="DropboxTestCases.Logouttest"/>
     </classes>
   </test> <!-- Dropbox test automation -->
+  <test name="Dropbox test automation(failed)">
+    <parameter name="User_Email" value="d3062366@nwytg.net"/>
+    <parameter name="Url_After_Login" value="https://www.dropbox.com/h"/>
+    <parameter name="Shared_Email" value="test@test.com"/>
+    <parameter name="User_Password" value="Test@123"/>
+    <parameter name="Url" value="https://www.dropbox.com"/>
+    <parameter name="Folder_Name" value="Dropboxfolder"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="DropboxTestCases.Uploadfiletest">
+        <methods>
+          <include name="setup"/>
+          <include name="captureresult"/>
+        </methods>
+      </class> <!-- DropboxTestCases.Uploadfiletest -->
+      <class name="DropboxTestCases.Sharefoldertest">
+        <methods>
+          <include name="captureresult"/>
+          <include name="setup"/>
+          <include name="Verifyfoldershared"/>
+        </methods>
+      </class> <!-- DropboxTestCases.Sharefoldertest -->
+      <class name="DropboxTestCases.Createfoldertest">
+        <methods>
+          <include name="setup"/>
+          <include name="captureresult"/>
+        </methods>
+      </class> <!-- DropboxTestCases.Createfoldertest -->
+      <class name="DropboxTestCases.Logouttest">
+        <methods>
+          <include name="setup"/>
+          <include name="Verifylogout"/>
+          <include name="captureresult"/>
+          <include name="displayresult"/>
+        </methods>
+      </class> <!-- DropboxTestCases.Logouttest -->
+      <class name="DropboxTestCases.Logintest">
+        <methods>
+          <include name="open_browser"/>
+          <include name="captureresult"/>
+        </methods>
+      </class> <!-- DropboxTestCases.Logintest -->
+      <class name="DropboxTestCases.Deletefoldertest">
+        <methods>
+          <include name="setup"/>
+          <include name="Verifydeletedfolder"/>
+          <include name="captureresult"/>
+        </methods>
+      </class> <!-- DropboxTestCases.Deletefoldertest -->
+    </classes>
+  </test> <!-- Dropbox test automation(failed) -->
 </suite> <!-- Failed suite [Suite] -->
